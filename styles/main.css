@@ -435,6 +435,7 @@ body {
   position: fixed;
   background-color: #fff; /* Небольшое затемнение на фоне */
   max-width: 100%;
+  max-height: 100%;
   background-image: url(../images/фонДляМеню4.png);
   justify-content: center;
   display: flex;
