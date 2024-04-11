@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./styles/main.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <h1 class="h1">Меню</h1>
+
+
+    <a class="home" href="indexR.html">
+      <svg width="99" height="99" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z"
+           fill="#364364" z-index="999"></path>
+      </svg>
+  </a>
+
+
+    <button class="cart" id="cart">
+      <img class="cart__image" src="./images/cart.png" alt="Cart" />
+      <div class="cart__num" id="cart_num">0</div>
+    </button>
+
+
+    <!-- <div class="container1"> -->
+      <div class="container2">
+        <button class="button" onclick="window.location.id='category1'">
+          Горячие блюда из рыбы и морепродуктов
+        </button>
+
+        <button class="button" onclick="window.location.id='category2'">
+          Горячие блюда из мяса и дичи
+        </button>
+        <button class="button" onclick="window.location.id='category3'">
+          Блюда в стол
+        </button>
+        <button class="button" onclick="window.location.id='category4'">
+          Сезонное меню
+        </button>
+        <button class="button" onclick="window.location.id='category5'">
+          Салаты
+        </button>
+        <button class="button" onclick="window.location.id='category6'">
+          Закуски
+        </button>
+        <button class="button" onclick="window.location.id='category7'">
+          Горячие закуски
+        </button>
+        <button class="button" onclick="window.location.id='category8'">
+          Супы
+        </button>
+        <button class="button" onclick="window.location.id='category9'">
+          Пицца
+        </button>
+        <button class="button" onclick="window.location.id='category10'">
+          Паста
+        </button>
+        <button class="button" onclick="window.location.id='category11'">
+          Роллы
+        </button>
+        <button class="button" onclick="window.location.id='category12'">
+          Шашлык & Гриль
+        </button>
+        <button class="button" onclick="window.location.id='category13'">
+          Гарниры
+        </button>
+        <button class="button" onclick="window.location.id='category14'">
+          Детское меню
+        </button>
+        <button class="button" onclick="window.location.id='category15'">
+          Выпечка
+        </button>
+        <button class="button" onclick="window.location.id='category16'">
+          Десерты
+        </button>
+        <button class="button" onclick="window.location.id='category17'">
+          Холодные напитки
+        </button>
+        <button class="button" onclick="window.location.id='category18'">
+          Соусы
+        </button>
+        <button class="button" onclick="window.location.id='category19'">
+          Стоп-лист
+        </button>
+      </div>
+    <!-- </div> -->
+
+
+   
+
+
+
+
+    <!-- Сетка карточек товаров -->
+
+    <section class="header"> 
+      <h1 id='category1'>Горячие блюда из рыбы и морепродуктов</h1>
+      <section class="container">
+        
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <div class="card__top">
+              <a id="toggleLink1" class="card__image">
+                <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+              </a>
+              <div class="card__label">99%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+          
+  
+          <div class="product" id="blockToToggle1">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton1">закрыть</button>
+              <h2 class="product__title">Люля кебаб, из баранины</h2>
+              <div class="product__img">
+                <img src="./images/люляБ.webp" alt="люляБаран">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  1270₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a  id="toggleLink2" class="card__image">
+                <img class="img"
+                  src="./images/креветки.webp"
+                  alt="креветки"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a id="toggleLink_2" class="card__title">
+                Креветки
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+  
+          <div class="product" id="blockToToggle2">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton2">закрыть</button>
+              <h2 class="product__title">Креветки</h2>
+              <div class="product__img">
+                <img src="./images/креветки.webp" alt="креветки">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+         
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a toggleLink3 class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a id=toggleLink_3 class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+  
+            <div class="product" id="blockToToggle3">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton3">закрыть</button>
+                <h2 class="product__title">Говядина</h2>
+                <div class="product__img">
+                  <img src="./images/говядина.webp" alt="креветки">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    8000₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+  
+  
+  
+  
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a toggleLink4 class="card__image">
+                <img class="img"
+                  src="./images/пицца.webp"
+                  alt="пицца"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a toggleLink_4 class="card__title">
+                Пицца
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+          <div class="product" id="blockToToggle4">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton4">закрыть</button>
+              <h2 class="product__title">Пицца</h2>
+              <div class="product__img">
+                <img src="./images/пицца.webp" alt="пицца">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="card.html" class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="card.html" class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+         
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+        <!-- </div> -->
+      </section>
+
+    </section>
+
+
+
+
+<section class="header"> 
+      <h1 id='category2'>Горячие блюда из мяса и дичи</h1>
+      <section class="container">
+        
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <div class="card__top">
+              <a id="toggleLink1" class="card__image">
+                <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+              </a>
+              <div class="card__label">99%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+          
+  
+          <div class="product" id="blockToToggle1">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton1">закрыть</button>
+              <h2 class="product__title">Люля кебаб, из баранины</h2>
+              <div class="product__img">
+                <img src="./images/люляБ.webp" alt="люляБаран">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  1270₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a  id="toggleLink2" class="card__image">
+                <img class="img"
+                  src="./images/креветки.webp"
+                  alt="креветки"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a id="toggleLink_2" class="card__title">
+                Креветки
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+  
+          <div class="product" id="blockToToggle2">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton2">закрыть</button>
+              <h2 class="product__title">Креветки</h2>
+              <div class="product__img">
+                <img src="./images/креветки.webp" alt="креветки">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+         
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a toggleLink3 class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a id=toggleLink_3 class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+  
+            <div class="product" id="blockToToggle3">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton3">закрыть</button>
+                <h2 class="product__title">Говядина</h2>
+                <div class="product__img">
+                  <img src="./images/говядина.webp" alt="креветки">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    8000₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+  
+  
+  
+  
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a toggleLink4 class="card__image">
+                <img class="img"
+                  src="./images/пицца.webp"
+                  alt="пицца"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a toggleLink_4 class="card__title">
+                Пицца
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+          <div class="product" id="blockToToggle4">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton4">закрыть</button>
+              <h2 class="product__title">Пицца</h2>
+              <div class="product__img">
+                <img src="./images/пицца.webp" alt="пицца">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="card.html" class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="card.html" class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+         
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+        <!-- </div> -->
+      </section>
+
+    </section>
+
+
+    <section class="header"> 
+      <h1 id="category3">Блюда в стол</h1>
+      <section class="container">
+        
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <div class="card__top">
+              <a id="toggleLink1" class="card__image">
+                <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+              </a>
+              <div class="card__label">99%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+          
+  
+          <div class="product" id="blockToToggle1">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton1">закрыть</button>
+              <h2 class="product__title">Люля кебаб, из баранины</h2>
+              <div class="product__img">
+                <img src="./images/люляБ.webp" alt="люляБаран">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  1270₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a  id="toggleLink2" class="card__image">
+                <img class="img"
+                  src="./images/креветки.webp"
+                  alt="креветки"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a id="toggleLink_2" class="card__title">
+                Креветки
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+  
+          <div class="product" id="blockToToggle2">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton2">закрыть</button>
+              <h2 class="product__title">Креветки</h2>
+              <div class="product__img">
+                <img src="./images/креветки.webp" alt="креветки">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+         
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a toggleLink3 class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a id=toggleLink_3 class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+  
+            <div class="product" id="blockToToggle3">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton3">закрыть</button>
+                <h2 class="product__title">Говядина</h2>
+                <div class="product__img">
+                  <img src="./images/говядина.webp" alt="креветки">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    8000₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+  
+  
+  
+  
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a toggleLink4 class="card__image">
+                <img class="img"
+                  src="./images/пицца.webp"
+                  alt="пицца"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a toggleLink_4 class="card__title">
+                Пицца
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+          <div class="product" id="blockToToggle4">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton4">закрыть</button>
+              <h2 class="product__title">Пицца</h2>
+              <div class="product__img">
+                <img src="./images/пицца.webp" alt="пицца">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="card.html" class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="card.html" class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+         
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+        <!-- </div> -->
+      </section>
+
+    </section>
+
+
+
+
+<section class="header"> 
+      <h1 id='category4'>Сезонное меню</h1>
+      <section class="container">
+        
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <div class="card__top">
+              <a id="toggleLink1" class="card__image">
+                <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+              </a>
+              <div class="card__label">99%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+          
+  
+          <div class="product" id="blockToToggle1">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton1">закрыть</button>
+              <h2 class="product__title">Люля кебаб, из баранины</h2>
+              <div class="product__img">
+                <img src="./images/люляБ.webp" alt="люляБаран">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  1270₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a  id="toggleLink2" class="card__image">
+                <img class="img"
+                  src="./images/креветки.webp"
+                  alt="креветки"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a id="toggleLink_2" class="card__title">
+                Креветки
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+  
+          <div class="product" id="blockToToggle2">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton2">закрыть</button>
+              <h2 class="product__title">Креветки</h2>
+              <div class="product__img">
+                <img src="./images/креветки.webp" alt="креветки">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+         
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a toggleLink3 class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a id=toggleLink_3 class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+  
+            <div class="product" id="blockToToggle3">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton3">закрыть</button>
+                <h2 class="product__title">Говядина</h2>
+                <div class="product__img">
+                  <img src="./images/говядина.webp" alt="креветки">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    8000₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+  
+  
+  
+  
+  
+  
+          <!-- Карточка товара -->
+          <div class="card" data-discount="99">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a toggleLink4 class="card__image">
+                <img class="img"
+                  src="./images/пицца.webp"
+                  alt="пицца"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">99%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <!-- <div class="card__price card__price--discount"></div> -->
+                <div class="card__price card__price--common">1270</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a toggleLink_4 class="card__title">
+                Пицца
+              </a>
+              <!-- Кнопка добавить Добавить -->
+              <button class="card__add">Добавить</button>
+            </div>
+          </div>
+  
+          <div class="product" id="blockToToggle4">
+            <div class="product_">
+              <button class="popup__close" id="toggleButton4">закрыть</button>
+              <h2 class="product__title">Пицца</h2>
+              <div class="product__img">
+                <img src="./images/пицца.webp" alt="пицца">
+              </div>
+              <p class="product__descr">Lorem ipsum dolor sit amet</p>
+              <div class="product__inner-price">
+                <div class="product__price">
+                  <b>Цена:</b>
+                  8000₽
+                </div>
+                <div class="product__discount">
+                  <b>Цена со скидкой:</b>
+                  1₽
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+            <!-- Карточка товара .. -->
+            <div class="card" data-discount="30">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="card.html" class="card__image">
+                  <img class="img"
+                    src="./images/говядина.webp"
+                    alt="говядина"
+                  />
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">30%</div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">150000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="card.html" class="card__title">
+                  Говядина
+                </a>
+                <!-- Кнопка добавить Добавить -->
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+         
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="card" data-discount="99">
+              <div class="card__top">
+                <a id="toggleLink1" class="card__image">
+                  <img class="img" src="./images/люляБ.webp" alt="люляБаран" />
+                </a>
+                <div class="card__label">99%</div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <!-- <div class="card__price card__price--discount"></div> -->
+                  <div class="card__price card__price--common">1270</div>
+                </div>
+                <a id="toggleLink_1" class="card__title">Люля кебаб из баранины</a>
+                <button class="card__add">Добавить</button>
+              </div>
+            </div>
+            
+    
+            <div class="product" id="blockToToggle1">
+              <div class="product_">
+                <button class="popup__close" id="toggleButton1">закрыть</button>
+                <h2 class="product__title">Люля кебаб, из баранины</h2>
+                <div class="product__img">
+                  <img src="./images/люляБ.webp" alt="люляБаран">
+                </div>
+                <p class="product__descr">Lorem ipsum dolor sit amet</p>
+                <div class="product__inner-price">
+                  <div class="product__price">
+                    <b>Цена:</b>
+                    1270₽
+                  </div>
+                  <div class="product__discount">
+                    <b>Цена со скидкой:</b>
+                    1₽
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+        <!-- </div> -->
+      </section>
+
+    </section>
+
+
+    <div class="popup">
+
+
+      <div class="popup_">
+
+        <div class="popup__container" id="popup_container">
+          <div class="popup__item">
+            <h1 class="popup__title">Корзина</h1>
+          </div>
+          <div class="popup__item" id="popup_product_list">
+            <div class="popup__product">
+              <div class="popup__product-wrap">
+                <img
+                  src="./images/iphone-14-pro-max-gold.png"
+                  alt="Apple IPhone 14 Pro Max 256Gb"
+                  class="popup__product-image"
+                />
+                <h2 class="popup__product-title">
+                  Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+                </h2>
+              </div>
+              <div class="popup__product-wrap">
+                <div class="popup__product-price"></div>
+                <button class="popup__product-delete">удалить</button>
+              </div>
+            </div>
+          </div>
+          <div class="popup__item">
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого</h2>
+              <output class="popup__cost-value" id="popup_cost">150000</output>
+            </div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Скидка</h2>
+              <output class="popup__cost-value" id="popup_discount">15000</output>
+            </div>
+            
+              
+
+
+
+
+            <form action="vasiliy.kozak@yandex.ru" class="form" id="add-form">
+              <label for="name">Имя Фамилия<span class="error">*</span></label>
+              <div class="input-box">
+                  <input data-required="true" id="name"  data-max-length="20" data-min-length="2" type="text" name="name" class="input-field" placeholder="Имя Фамилия">
+  
+              </div>
+              <label for="phone">Телефон<span class="error">*</span></label>
+              <div class="input-box">
+                  <input data-max-length="20" data-min-length="6" type="tel" id="phone" name="phone" inputmode="tel" pattern="[+]?[\d\s()-]*" placeholder="+7 000 000 00 00">
+              </div>
+              <label for="email">E-mail</label>
+              <div class="input-box">
+                  <input data-required="true" data-max-length="50" data-min-length="2" type="text" class="input-field" placeholder="E-mail">
+              </div>
+              <div class="input-box">
+                  <label for="delivery_option">Выберите способ получения<span class="error">*</span></label>
+                  <select id="delivery_option" name="delivery_option" >
+                    <option value="">Выберите...</option>
+                    <option value="delivery">Доставка</option>
+                    <option value="pickup">Самовывоз</option>
+                  </select>
+              </div>
+            <div id="pickup-info" class="pickup-info">
+              Самовывоз производится по адресу:
+              <a href="https://2gis.ru/sochi/geo/70030076334957148" target="_blank"> <span class="pickup-address">улица Транспортная 12/12</span></a>
+          </div>
+              <div id="address" class="input-box">
+                <label for="delivery_address">Адрес для доставки<span class="error">*</span></label>
+                <input type="text" id="delivery_address" name="delivery_address" placeholder="ул. Транспортная">
+              </div>
+              
+              <div class="input-box">
+                <label for="quantity">Количество приборов<span class="error">*</span></label>
+                <input type="number" id="quantity" name="quantity" min="0" value="0">
+              </div>
+              <div class="input-box">
+                <label for="comment">Комментарий к заказу</label>
+                <textarea id="comment" name="comment"></textarea>
+              </div>
+  
+              <input type="submit" class="send-btn" value="Отправить">
+              
+          </form>
+
+
+
+
+
+
+              
+
+              <a class="popup__cost_" href="https://partner.robokassa.ru/Auth/Login?ReturnUrl=%2f">Заказать  .  
+                <!-- <h2 class="popup__cost-title">К оплате</h2> -->
+                
+                <output class="popup__cost-value" id="popup_cost_discount"
+                  >135000</output
+                >
+              </a>
+
+
+
+
+          </div>
+          <button class="popup__close" id="popup_close">закрыть</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="go-top">▲</div>
+
+<footer style="font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 10px 0;">
+  Подключайся к нам в телеграмм <a target="_blank" href="https://t.me/frontend_case">@frontend_case</a>.
+  Помощь новичкам!
+  Будем развиваться во фронтенд разработке вместе :)
+</footer>
+    
+
+    <script src="./js/index.js" type="module" defer></script>
+    
+  </body>
+</html>
