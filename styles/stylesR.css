@@ -276,7 +276,7 @@ font-family: Briolin;
 .history {
     margin-top: 166px;
     padding-bottom: 200px;
-    /* background-image: url(../imagesR/фонДляМеню12.png); */
+    background-image: url(../imagesR/фонДляМеню12.png);
     background-attachment: fixed;
   background-size: 100% auto;
   background-repeat: no-repeat;
